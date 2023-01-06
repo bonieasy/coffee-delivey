@@ -116,5 +116,5 @@ export const PaymentMethod = styled.div`
 export const CheckoutContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 `;
