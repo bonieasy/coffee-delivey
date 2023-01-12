@@ -1,18 +1,15 @@
-import { Banner } from "./components/Banner";
-import { Addresse } from "./components/Checkout";
 import { Header } from "./components/Header";
-import { Products } from "./components/Products";
-import { Success } from "./components/Success";
 import { GlobalStyle } from "./styles/global";
+import { Router } from "./Router";
+import { BrowserRouter } from "react-router-dom";
 
 export function App() {
   return (
     <>
     <Header />
-    <Banner />
-    <Products />
-    <Addresse />
-    <Success />
+    <BrowserRouter>
+    <Router />
+    </BrowserRouter>
     <GlobalStyle />
     </>
   );

@@ -47,7 +47,7 @@ body, input, textarea, button {
     font-weight: 400;
     border: none;
 }
-h1, h2, h3, h4, h5, h6, strong {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
     font-size: 2rem;
     font-family: 'Baloo 2', sans-serif;

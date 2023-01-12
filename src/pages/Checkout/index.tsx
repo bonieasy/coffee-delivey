@@ -3,7 +3,7 @@ import { Cart } from './Cart';
 import { FormAddresse, Payment, Container, PaymentMethod, CheckoutContainer } from './styles';
 
 
-export function Addresse() {
+export function Checkout() {
     return(
         <CheckoutContainer>
         <Container>

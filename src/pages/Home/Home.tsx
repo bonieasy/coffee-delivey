@@ -1,8 +1,8 @@
 import Cup from '../../assets/coffee.svg';
 import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
-import { Container, Descriptions, Items } from '../../pages/Home/styles';
+import { Container, Descriptions, Items } from './styles';
 
-export function Banner () {
+export function Home () {
     return(
         <Container>
             <Descriptions>
