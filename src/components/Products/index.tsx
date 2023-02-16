@@ -1,17 +1,11 @@
 import expresso from '../../assets/Type=Expresso.svg';
 import { ShoppingCartSimple } from "phosphor-react";
 import { Buy, Cards, CoffeeCard, Container, Tag } from './styles';
+import { useState } from 'react';
 
 export function Products () {
+    const [count, setCount] = useState(0);
 
-
-// function handleMinus() {
-//         this.value--;  
-//       }
-
-//       handlePlus() {
-//         this.value++;    
-//       }
     return (
         <Container>
             <h2>Our coffees</h2>
@@ -24,9 +18,9 @@ export function Products () {
                     <Buy>
                         <p>RS 9,90</p>
                         <div className='wrapper'>
-                            <button className='plusminus'>-</button>
-                            <input type='number' className='num' />
-                            <button className='plusminus'>+</button>
+                            <button className='plusminus' onClick={() => setCount((count) => count - 1)}>-</button>
+                            <p className='num'>{count}</p>
+                            <button className='plusminus' onClick={() => setCount((count) => count + 1)}>+</button>
                         </div>
                         <button>
                             <ShoppingCartSimple size={16} weight="fill" color='#F3F2F2' />

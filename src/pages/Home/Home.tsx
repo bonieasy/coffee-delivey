@@ -1,6 +1,7 @@
 import Cup from '../../assets/coffee.svg';
 import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
 import { Container, Descriptions, Items } from './styles';
+import { Products } from '../../components/Products';
 
 export function Home () {
     return(
@@ -38,9 +39,13 @@ export function Home () {
                     </div>
                     
                 </Items>
+                
+                <Products/>
 
             </Descriptions>
             <img src={Cup} alt="Cup of coffee" />
+
+            
         </Container>
     );
 }

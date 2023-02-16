@@ -101,7 +101,7 @@ export const Buy = styled.div`
 }
 
 .num {
-  height: 100%;
+  //height: 100%;
   width: 39%;
   border: none;
 }
@@ -114,14 +114,14 @@ export const Buy = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.6rem;
+    gap: 0.2rem;
     border-radius: 6px;
 }
 
     button {
         background: var(--purple-dark);
         border-radius: 6px;
-        padding: 8px;
+        padding: 2px;
         
     }
 `;
