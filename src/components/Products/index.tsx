@@ -4,7 +4,13 @@ import { Buy, Cards, CoffeeCard, Container, Tag } from './styles';
 import { useState } from 'react';
 
 export function Products () {
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(0); 
+
+    const decrease = () => {
+        if (count > 0){
+        setCount((count) => count - 1)
+        } 
+    };
 
     return (
         <Container>
@@ -18,7 +24,7 @@ export function Products () {
                     <Buy>
                         <p>RS 9,90</p>
                         <div className='wrapper'>
-                            <button className='plusminus' onClick={() => setCount((count) => count - 1)}>-</button>
+                            <button className='plusminus' onClick={decrease}>-</button>
                             <p className='num'>{count}</p>
                             <button className='plusminus' onClick={() => setCount((count) => count + 1)}>+</button>
                         </div>
@@ -27,7 +33,6 @@ export function Products () {
                         </button>
                     </Buy>
                 </CoffeeCard>
-
 
             </Cards>
         </Container>

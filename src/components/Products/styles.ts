@@ -99,6 +99,10 @@ export const Buy = styled.div`
   width: 30%;
   background: transparent;
 }
+&:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
 
 .num {
   //height: 100%;
