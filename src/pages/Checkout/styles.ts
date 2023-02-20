@@ -33,20 +33,21 @@ export const FormAddresse = styled.div`
         color: var(--text);
     }
 
+`;
+
+export const Inputs = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 2rem;
+
     input {
         background: var(--input);
         border: 1px solid var(--button);
         border-radius: 4px;
         height: 42px;
         padding: 0.75rem;
-    }
-
-    .inputs-address {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-        margin-top: 2rem;
     }
 `;
 

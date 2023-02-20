@@ -1,14 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    padding: 0 10rem;
+    padding: 0 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 3.375rem;
-
     margin-bottom: 5rem;
-
 
     h2 {
         color: var(--subtitle);
@@ -19,6 +17,7 @@ export const Cards = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
 `;
@@ -37,6 +36,8 @@ export const CoffeeCard = styled.div`
     img {
         position: relative;
         top: -40px;
+        height: 120px;
+        width: 120px;
     }
 
     h3 {
@@ -55,6 +56,12 @@ export const CoffeeCard = styled.div`
         text-align: center;
         color: var(--label);
     }
+`;
+export const AllTags = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
 `;
 
 export const Tag = styled.span`
@@ -76,23 +83,6 @@ export const Buy = styled.div`
     gap: 0.5rem;
     padding: 1.25rem 0;
 
-
-    input {
-        border-radius: 6px;
-        width: 72px;
-        height: 38px;
-        background: transparent;
-    }
-    input[type="number"] {
-    -webkit-appearance: textfield !important;
-    -moz-appearance: textfield !important;
-    appearance: textfield !important;
-    }
-
-    input[type=number]::-webkit-inner-spin-button,
-    input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-  }
   .plusminus {
   color: var(--purple);
   height: 100%;
@@ -105,7 +95,6 @@ export const Buy = styled.div`
   }
 
 .num {
-  //height: 100%;
   width: 39%;
   border: none;
 }
@@ -127,5 +116,15 @@ export const Buy = styled.div`
         border-radius: 6px;
         padding: 2px;
         
+    }
+
+    p {
+        color: var(--text);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-size: 14px;
+        line-height: 130%;
+        font-weight: 800;
+
     }
 `;

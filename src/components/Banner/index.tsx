@@ -34,7 +34,7 @@ export function Banner () {
                         <a className='coffee'>
                             <Coffee size={16} weight="fill" color='#FAFAFA' />
                         </a>
-                        <span>Coffee arrives fresh to you</span>
+                        <span>Coffee arrives fresh to you3</span>
                     </div>
                     
                 </Items>

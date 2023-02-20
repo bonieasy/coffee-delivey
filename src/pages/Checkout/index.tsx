@@ -1,6 +1,6 @@
 import { Bank, CreditCard, CurrencyEur, MapPinLine, Money } from 'phosphor-react';
 import { Cart } from './Cart';
-import { FormAddresse, Payment, Container, PaymentMethod, CheckoutContainer } from './styles';
+import { FormAddresse, Payment, Container, PaymentMethod, CheckoutContainer, Inputs } from './styles';
 
 
 export function Checkout() {
@@ -15,11 +15,12 @@ export function Checkout() {
                 <p>Informe o endere;o onde deseja receber seu pedido</p>
 
               
-            <div className="inputs-address">
-                <input type='text' placeholder='ZIP Code' />
-                <input type='text' placeholder='Street' />
-                <input type='text' placeholder='Number' />
-            </div>
+            <Inputs>
+                <input className='zip_code' type='text' placeholder='ZIP Code' />
+                <input className='street' type='text' placeholder='Street' />
+                <input className='number' type='text' placeholder='Number' />
+            </Inputs>
+
             </FormAddresse>
 
             <Payment>

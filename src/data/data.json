@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Expresso",
+        "tag": ["traditional"],
+        "description": "Boiling water under pressure through finely-ground coffee beans.",
+        "price": 3.00,
+        "image": "src/assets/Type=Expresso.svg",
+        "alt": "cup of expresso coffee"
+    
+    },
+
+    {
+        "id": 2,
+        "name": "Cappuccino",
+        "tag": ["milk", "traditional"],
+        "description": "Traditional expresso with hot foamed milk",
+        "price": 3.00,
+        "image": "src/assets/cappuccino.svg",
+        "alt": "cup of cappuccino coffee"
+    },
+
+    {
+        "id": 3,
+        "name": "Latte",
+        "tag": ["milk", "traditional"],
+        "description": "Milky coffee that boasts a silky layer of foam",
+        "price": 3.00,
+        "image": "src/assets/latte.svg",
+        "alt": "cup of latte coffee"
+    },
+
+    {
+        "id": 4,
+        "name": "Irish",
+        "tag": ["especial", "alcoholic"],
+        "description": "Coffee, whiskey, sugar and whipped cream",
+        "price": 3.00,
+        "image": "src/assets/Irish.svg",
+        "alt": "cup of irish coffee"
+    }
+]

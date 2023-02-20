@@ -3,15 +3,25 @@ import background from '../../assets/Background.svg';
 
 export const Container = styled.div`
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    //align-items: flex-start;
     gap: 4rem;
     padding: 5rem 10rem;
     background-image: url(${background}) no-repeat center;
     //filter: blur(0.5px);
 
+    .intro-coffee {
+        width: 476px;
+        height: 360px;
+    }
 
-
+`;
+export const Content = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: 3.5rem;
+    align-items: center;
+    justify-content: space-between;
 `;
 
 export const Descriptions = styled.div`
@@ -38,6 +48,8 @@ export const Items = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 2.5rem;
+
+    padding-bottom: 10rem;
 
     div {
         display: flex;

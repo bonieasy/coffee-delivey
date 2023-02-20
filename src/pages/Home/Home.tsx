@@ -1,11 +1,12 @@
 import Cup from '../../assets/coffee.svg';
 import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
-import { Container, Descriptions, Items } from './styles';
+import { Container, Descriptions, Items, Content } from './styles';
 import { Products } from '../../components/Products';
 
 export function Home () {
     return(
         <Container>
+            <Content>
             <Descriptions>
                 <h1>Find the perfect coffee for any time of day</h1>
                 <span className='subtitle'>With Coffee Delivery you receive your coffee wherever you are, at any time</span>
@@ -40,12 +41,13 @@ export function Home () {
                     
                 </Items>
                 
-                <Products/>
-
             </Descriptions>
-            <img src={Cup} alt="Cup of coffee" />
+            <img className='intro-coffee' src={Cup} alt="Cup of coffee" />
+            </Content>
+            <Products/>
+            
 
             
         </Container>
     );
-}
+} 

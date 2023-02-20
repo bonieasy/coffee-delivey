@@ -66,6 +66,8 @@ export const Products = styled.div`
         gap: 0.5rem;
         height: 2rem;
     }
+    
+
 
     input {
         border-radius: 6px;
@@ -73,16 +75,7 @@ export const Products = styled.div`
         height: 2rem;
         background: transparent;
     }
-    input[type="number"] {
-    -webkit-appearance: textfield !important;
-    -moz-appearance: textfield !important;
-    appearance: textfield !important;
-    }
 
-    input[type=number]::-webkit-inner-spin-button,
-    input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-  }
   .plusminus {
   color: var(--purple);
   height: 100%;
